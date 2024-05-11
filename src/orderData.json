@@ -1,0 +1,37 @@
+{
+    "orderCancellation": [
+      {
+        "id": 1,
+        "step": "Request cancellation",
+        "precondition": "Order placed"
+      },
+      {
+        "id": 2,
+        "step": "Confirmation",
+        "precondition": "Request cancellation"
+      },
+      {
+        "id": 3,
+        "step": "Cancellation processed",
+        "precondition": "Confirmation"
+      }
+    ],
+    "orderReturn": [
+      {
+        "id": 1,
+        "reason": "Damaged product",
+        "action": "Return for refund"
+      },
+      {
+        "id": 2,
+        "reason": "Wrong item received",
+        "action": "Return for exchange"
+      },
+      {
+        "id": 3,
+        "reason": "Changed my mind",
+        "action": "Return for store credit"
+      }
+    ]
+  }
+  
